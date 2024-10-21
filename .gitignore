@@ -1,0 +1,6 @@
+# Node modules
+node_modules/
+
+# Ignore WhatsApp Web session and cache files
+.wwebjs_auth/
+.wwebjs_cache/
