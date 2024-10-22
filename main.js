@@ -5,7 +5,7 @@ const autoResponder = require('./autoResponder');
 const fetchMessagesFromContact = require('./chatScraper');
 
 // Uncomment the function you want to run
-// const contactName = 'kenneth';
+// const contactName = 'sena';
 // fetchMessagesFromContact(contactName);
 
 // scrapeContacts();
