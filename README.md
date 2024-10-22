@@ -21,14 +21,14 @@ To run this project, ensure you have [Docker](https://www.docker.com/) installed
    Open your terminal and run the following command to build the Docker image:
 
    ```bash
-   docker build -t flux.it-chatbot .
+   docker build -t bopple/flux.it-chatbot .
    ```
    
 3. **Run the Docker Container**  
    After building the image, you can run the Docker container with:
 
    ```
-   docker run -d --name myapp -p 3000:000 flux.it-chatbot
+   docker run -d --name myapp -p 3000:3000 bopple/flux.it-chatbot
    ```
 
 ## 🌐 Access the Application
