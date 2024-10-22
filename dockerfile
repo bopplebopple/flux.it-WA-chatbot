@@ -23,13 +23,17 @@ RUN apt-get update && apt-get install -y \
     libxi6 \
     libxtst6 \
     libxrandr2 \
-    libdrm2 \     
-    libgbm1 \   
+    libdrm2 \
+    libgbm1 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
+# Create a non-root user and switch to it
+RUN useradd -ms /bin/bash appuser
+USER appuser
+
 # Copy the rest of your application code
-COPY . .
+COPY --chown=appuser:appuser . .
 
 # Expose the application port (e.g., 3000)
 EXPOSE 3000
