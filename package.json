@@ -18,7 +18,6 @@
   "homepage": "https://github.com/bopplebopple/flux.it-WA-chatbot#readme",
   "keywords": [],
   "dependencies": {
-    "puppeteer": "^23.6.0",
     "qrcode-terminal": "^0.12.0",
     "whatsapp-web.js": "^1.23.0"
   }
