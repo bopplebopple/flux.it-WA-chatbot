@@ -28,12 +28,15 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
+# Create necessary directories and set permissions
+RUN mkdir -p /usr/src/app/.wwebjs_auth/session && \
+    chown -R node:node /usr/src/app
+
 # Create a non-root user and switch to it
-RUN useradd -ms /bin/bash appuser
-USER appuser
+USER node
 
 # Copy the rest of your application code
-COPY --chown=appuser:appuser . .
+COPY --chown=node:node . .
 
 # Expose the application port (e.g., 3000)
 EXPOSE 3000
