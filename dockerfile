@@ -23,6 +23,8 @@ RUN apt-get update && apt-get install -y \
     libxi6 \
     libxtst6 \
     libxrandr2 \
+    libdrm2 \     
+    libgbm1 \   
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
