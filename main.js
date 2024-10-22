@@ -8,6 +8,6 @@ const fetchMessagesFromContact = require('./chatScraper');
 // const contactName = 'kenneth';
 // fetchMessagesFromContact(contactName);
 
-scrapeContacts();
+// scrapeContacts();
 
-// autoResponder();
+autoResponder();
